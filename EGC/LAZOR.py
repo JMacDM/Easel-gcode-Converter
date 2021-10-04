@@ -6,7 +6,7 @@ st = ['G0 Z' , 'G1 Z-0.500 F150.0' , 'G1 Z-1.000 F150.0' , 'G1 Z-1.500 F150.0' ,
 sg = ['M106 P0 S0 ;' , 'M106 P0 S55' , 'M106 P0 S105' , 'M106 P0 S155' , 'M106 P0 S205' , 'M106 P0 S255' , ';G1 Z1.500 F228.6']
 #inputfilename
 rf = ""
-fi = str(input('Enter file name (without .gcode extension) \n >'))
+fi = str(input('Enter file name (without .nc extension) \n >'))
 rundir = str(os.getcwd())
 rd = rundir.split('\\')
 rd.pop()
