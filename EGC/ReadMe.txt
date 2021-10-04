@@ -1,3 +1,11 @@
+Easily Convert your Easel designs into gcode you can use on your 3d printer with laser attached to parts cooling fan port (M106 in gcode)
+allows 5 shades which you set by the depth of cut in Easel.
+Python script will then convert z movements to laser intensities, and generate a gcode file from the Easel .nc file.
+Will add support for alternate Smoothieboard mosfets soon
+Will add support for grbl laser control if there is interest.
+
+//// Be sure to read Setup and Use before using.\\\\
+
 
 /////////////////////// Setup:\\\\\\\\\\\\\\\\\\\\\\
 
