@@ -23,4 +23,8 @@ Place items as you usually would, but make cuts in increments of .5mm.
 1.5mm cut is 60%
 1.0mm cut is 40%
 .5mm cut is 20%
+Download gcode from Easel.
+Place gcode in directory with the folder containing script. (directory above script)
+when prompted type in easel file name without .nc extension
+file will be placed in folder with original file.
 
