@@ -8,14 +8,18 @@ sg = ['M106 P0 S0 ;' , 'M106 P0 S55' , 'M106 P0 S105' , 'M106 P0 S155' , 'M106 P
 rf = ""
 fi = str(input('Enter file name (without .nc extension) \n >'))
 rundir = str(os.getcwd())
-rd = rundir.split('\\')
+if '/' in rundir:
+	o = '/'
+elif '\\' in rundir:
+	o = '\\'
+rd = rundir.split(o)
 rd.pop()
 rd.append(fi)                  
 for i in range(len(rd)):
     if i == (len(rd) - 1):
         rf = rf +rd[i]
     else:
-        rf = rf + rd[i] + '\\'
+        rf = rf + rd[i] + o
 print(rf)
 filename = str(rf)
 #creates tmp file, and does first conversion
